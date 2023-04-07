@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+.container {
+    max-width: 1520px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.flex-tabs {
+    display: flex;
+}
+
+.tab-container {
+    display: flex;
+}
+
+.tab-nav,
+.tab-nav_btn, 
+.tab-content,
+.tab-content_block {
+    border: 2px rgba(74, 214, 123, 0.764) dashed;
+    background-color: rgba(31, 114, 60, 0.764);
+    color: #fff;
+    padding: 10px;
+}
+
+.tab-nav {
+    min-width: 100px;
+}
+
+.tab-nav_btn {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.tab-nav_btn.active {
+    background-color: rgba(74, 214, 123, 0.764);
+    border: 2px rgba(31, 114, 60, 0.764) dashed;
+}
+
+.tab-nav_btn:last-child {
+    margin-bottom: 0;
+}
+
+.tab-content_block {
+    display: none;
+    transition: .3s;
+}
+
+.tab-content_block.active {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 600px;
+    height: 100%;
+    font-size: 18px;
+}
+
+
+
+.tab-content-img {
+    max-width: 200px;
+    float: left;
+    padding: 5px 5px 0 0;
+}
+
+.tab-content-img img {
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-color: #41403e;
+    border-style: solid;
+    border-width: 2px;
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+    .flex-tabs {
+        flex-direction: column;
+    }
+}
+
